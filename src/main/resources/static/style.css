@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f8ff;
+}
+
+.container {
+    display: flex;
+    width: 70%;
+    height: 80vh;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+/* Левая панель (список заметок) */
+.sidebar {
+    width: 30%;
+    background: #007BFF;
+    color: white;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.sidebar h2 {
+    text-align: center;
+}
+
+#noteList {
+    list-style: none;
+    padding: 0;
+}
+
+#noteList li {
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #ffffff55;
+}
+
+#noteList li:hover {
+    background: #0056b3;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: #0044cc;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #003399;
+}
+
+/* Правая панель (редактор) */
+.editor {
+    width: 70%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+input, textarea {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #007BFF;
+    border-radius: 5px;
+}
+
+textarea {
+    height: 200px;
+}
+
+.buttons {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+}

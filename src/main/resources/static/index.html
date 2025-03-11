@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Менеджер заметок</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <!-- Левая панель со списком заметок -->
+    <div class="sidebar">
+        <h2>Заметки</h2>
+        <ul id="noteList"></ul>
+        <button onclick="createNewNote()">+ Новая заметка</button>
+    </div>
+
+    <!-- Правая панель редактирования -->
+    <div class="editor">
+        <input id="noteTitle" type="text" placeholder="Заголовок">
+        <textarea id="noteContent" rows="10" placeholder="Введите текст..."></textarea>
+        <div class="buttons">
+            <button onclick="saveNote()">💾 Сохранить</button>
+            <button onclick="deleteNote()">🗑️ Удалить</button>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
